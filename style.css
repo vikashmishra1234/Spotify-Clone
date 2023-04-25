@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    height: 50px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0px 8px;
+   
+}
+nav ul li{
+    padding: 0px 6px; 
+    padding: 0px 6px;
+    font-size: 0.9rem;
+    
+  
+}
+.brand img{
+    width: 27px;
+    padding: 0px 8px;
+}
+.Spotify{
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.container{
+    min-height: 69.5vh;
+    display: flex;
+    background-color: black;
+    width: 80%;
+   font-family: 'varela Round',sans-serif;
+    color: white;
+    margin: 14px auto;
+    border-radius: 10px;
+    padding: 3px;
+    background-image: url("man.jpg");
+    background-size: cover;
+    
+}
+.container h1{
+    padding: 23px;
+    font-size: 25px;
+}
+.songList{
+    margin: 0px 10px;
+
+}
+.songBanner{
+
+}
+.bottom{
+    background-color: black;
+    position: absolute;
+    height: 114px;
+    bottom: 1%;
+    font-family: 'varela Round',sans-serif;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#myProgress{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 0px 20px;
+    margin-bottom: 38px;
+    padding: 6px;
+}
+
+
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+    height: 43px;
+    display: flex;
+    background-color: white;
+    width: 301px;
+    color: black;
+    margin: 12px 0px;
+    border-radius: 19px;
+    /* padding: 0px; */
+    justify-content: space-between;
+    align-items: center;
+
+}
+.songItem img{
+    width: 34px;
+    margin: 0px 10px;
+    border-radius: 15px;
+
+
+}
+.songListPlay{
+margin: 0px 6px;
+}
+.songListPlay i{
+cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 8%;
+    top: 35%;
+    display: flex;
+    align-items: center;
+}
+.songInfo img{
+    width: 95px;
+    opacity: 0;
+    transition: .4s;
+}
+@media only screen and (max-width:412px) {
+    .bottom{
+    bottom: 8%;
+    height: 100px;
+    }
+}
+@media only screen and (max-width:360px) {
+    .bottom{
+    bottom: 11%;
+    height: 117px;
+    }
+    .songItem{
+        width: 97%;
+    }
+    #myProgress{
+        margin-top: 9px;
+
+        
+    }
+    #name{
+        margin-top: 25px;
+       
+    }
+    .songInfo{
+        left: 27%;
+        margin-top: 14px;
+        justify-content: center;
+        align-items: center;
+    }
+    .songInfo img{
+        width: 50px ;
+    }
+    .container{
+        min-height: 450px;
+    }
+}
